@@ -86,7 +86,7 @@ public class PeriodicTable {
 							this.add(f.getObject(csv));
 					}
 					if (f.toString().matches("ElementFactory")) {
-						ElementFactory eobj = (ElementFactory) f;
+						//ElementFactory eobj = (ElementFactory) f;
 						this.add(f.getObject(csv));
 					}
 				}
@@ -550,7 +550,7 @@ public class PeriodicTable {
 		 */
 		static {
 			MAJOR_REVISION = 4;
-			MINOR_REVISION = 3;
+			MINOR_REVISION = 2;
 			REVISION = Integer.valueOf(MAJOR_REVISION) + "." + Integer.valueOf(MINOR_REVISION);
 			/**
 			 * Detailed development log for this class
@@ -563,8 +563,8 @@ public class PeriodicTable {
 			 * 
 			 */
 			DEVELOPMENT_LOG_ENTRY_LIST = new ArrayList<>(
-					Arrays.asList("example of the first log entry", "example of the second log entry",
-							"example of the most recent log entry", "** End of Log Entry List **"));
+					Arrays.asList("Target classes code addition", "Factory classes code addition","Singleton classes code addition",
+							"Sort logic code addition","code additions/edits as per requirements", "** End of Log Entry List **"));
 		} // end static block
 
 		public void setOuterClass(Class outerClass) {
